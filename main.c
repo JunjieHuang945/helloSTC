@@ -3,18 +3,25 @@
 int main(){
 	//时间控制
 	unsigned int ONOFFSET[24]={1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-	unsigned int i;
+	unsigned int i,j;
 	P1_1=0;//初始化
+
+	//通断测试
+	for(i=0;i<3;i++){
+		P1_1=1;
+		delay_s(1);
+		P1_1=0;
+	}
 	while (1)
 	{
-		if (i=24)
+		if (j=24)
 		{
-			i=0;
+			j=0;
 		}
 		
 		P1_1 = ONOFFSET[i];
 		delay_h(1);
-		i++;
+		j++;
 	}
 
 	return 0;
