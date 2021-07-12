@@ -20,4 +20,4 @@ cleanall:
 	rm -rf *.lk *.bin *.asm *.lst *.mem *.rst *.lnk *.rel *.sym *.ihx *.hex *.map
 
 clean:
-	rm -rf *.asm *.lst *.mem *.rst *.lnk *.rel *.sym *.ihx *.hex *.map
+	rm -rf *.asm *.lst *.mem *.rst *.lnk *.rel *.sym *.ihx *.map *.lk *.bin
