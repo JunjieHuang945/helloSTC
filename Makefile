@@ -7,14 +7,17 @@ main.bin : main.hex
 main.hex : main.ihx
 	packihx main.ihx > main.hex
 
-main.ihx : main.rel delay.rel
-	$(CC) main.rel delay.rel
+main.ihx : main.rel delay.rel timer.rel
+	$(CC) main.rel delay.rel timer.rel
 
-main.rel : main.c delay.h
+main.rel : main.c delay.h timer.h
 	$(CC) -c main.c
 
 delay.rel : delay.c
 	$(CC) -c delay.c
+
+timer.rel : timer.c 
+	$(CC) -c timer.c
 
 cleanall:
 	rm -rf *.lk *.bin *.asm *.lst *.mem *.rst *.lnk *.rel *.sym *.ihx *.hex *.map
