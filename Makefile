@@ -10,7 +10,7 @@ main.hex : main.ihx
 main.ihx : main.rel delay.rel timer.rel
 	$(CC) main.rel delay.rel timer.rel
 
-main.rel : main.c delay.h timer.h
+main.rel : main.c delay.h timer.h main.h
 	$(CC) -c main.c
 
 delay.rel : delay.c
