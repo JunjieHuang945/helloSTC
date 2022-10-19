@@ -14,9 +14,9 @@
 #define WPP4 P0_7
 
 //关闭电平
-#define STATUS_OFF 0
+#define STATUS_OFF 1
 //打开电平
-#define STATUS_ON 1
+#define STATUS_ON 0
 
 //控制时间周期长度
 #define LED_SET_LENGTH 4
